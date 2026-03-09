@@ -1,231 +1,164 @@
-AffectaAI — Emotion-Adaptive Mobile Interface Engine
+# AffectaAI — Emotion-Adaptive Mobile Interface Engine
 
-AffectaAI is an experimental Android application that explores how mobile interfaces can adapt dynamically to a user's behavioral context and emotional state.
-Instead of static UI experiences, the application analyzes device interaction patterns and automatically adjusts the interface to support focus, calmness, and reduced digital overload.
+AffectaAI is an experimental Android application that explores how **mobile interfaces can dynamically adapt to a user's behavioral context and emotional state**. Instead of static UI experiences, the application analyzes device interaction patterns and automatically adjusts the interface to support **focus, calmness, and reduced digital overload**.
 
-The project demonstrates how behavioral signals, on-device analytics, and adaptive UI design can be combined to build a context-aware mobile experience.
+The project demonstrates how **behavioral signals, on-device analytics, and adaptive UI design** can be combined to build a context-aware mobile experience.
 
-Problem Statement
 
-Modern smartphone interfaces remain static and unaware of user context, exposing users to constant notifications, digital distractions, and information overload.
-This often leads to:
+# Problem Statement
 
-Reduced focus and productivity
+Modern smartphone interfaces remain **static and unaware of user context**, exposing users to constant notifications, digital distractions, and information overload. This often leads to:
 
-Increased cognitive load
-
-Poor digital wellbeing
-
-Lack of personalization in UI behavior
+* Reduced focus and productivity
+* Increased cognitive load
+* Poor digital wellbeing
+* Lack of personalization in UI behavior
 
 Most mobile applications treat every interaction the same, regardless of the user's mental state or interaction patterns.
 
-Solution
 
-AffectaAI introduces an emotion-adaptive interface engine that analyzes behavioral signals such as:
+# Solution
 
-Notification activity
+AffectaAI introduces an **emotion-adaptive interface engine** that analyzes behavioral signals such as:
 
-Device interaction frequency
-
-Session patterns
-
-App usage behavior
+* Notification activity
+* Device interaction frequency
+* Session patterns
+* App usage behavior
 
 Based on these signals, the system predicts the user's current state:
 
-Calm
+* Calm
+* Focused
+* Overwhelmed
 
-Focused
-
-Overwhelmed
-
-The application then dynamically adapts UI behavior to reduce distractions and improve user experience.
+The application then **dynamically adapts UI behavior** to reduce distractions and improve user experience.
 
 Examples of adaptive responses include:
 
-Visual UI adjustments
+* Visual UI adjustments
+* Notification behavior control
+* Focus-friendly interface states
+* Reduced interaction noise during high-stress moments
 
-Notification behavior control
+This enables a more **human-centered, context-aware mobile experience**.
 
-Focus-friendly interface states
 
-Reduced interaction noise during high-stress moments
 
-This enables a more human-centered, context-aware mobile experience.
+# Key Features
 
-Key Features
-Emotion-Adaptive UI
+### Emotion-Adaptive UI
 
 The interface dynamically changes based on detected emotional states such as Calm, Focused, and Overwhelmed.
 
-Behavioral Signal Processing
+### Behavioral Signal Processing
 
 User interaction patterns are analyzed in real time to infer emotional context.
 
-On-Device Emotion Prediction
+### On-Device Emotion Prediction
 
 Emotion inference runs locally using a lightweight behavioral prediction engine, ensuring privacy and efficiency.
 
-Emotion Insights Dashboard
+### Emotion Insights Dashboard
 
 Users can view weekly emotional trends through interactive graphs that visualize behavioral patterns.
 
-Privacy-First Design
+### Privacy-First Design
 
 All behavioral data is processed locally on the device with no external tracking or data sharing.
 
-Adaptive Interface Feedback
+### Adaptive Interface Feedback
 
 The system adjusts UI behavior to reduce digital noise and promote better focus.
 
-Architecture
 
-The application follows a clean and modular architecture:
+# Technology Stack
 
-User Interaction
-        │
-        ▼
-Behavior Collector
-        │
-        ▼
-Feature Extraction
-        │
-        ▼
-Emotion Prediction Engine
-        │
-        ▼
-Emotion State (Calm / Focused / Overwhelmed)
-        │
-        ▼
-Adaptive UI + Overlay System
-        │
-        ▼
-Emotion Insights Dashboard
-Technology Stack
+**Language**
 
-Language
+* Kotlin
 
-Kotlin
+**UI Framework**
 
-UI Framework
+* Jetpack Compose
 
-Jetpack Compose
+**Architecture**
 
-Architecture
+* MVVM (Model–View–ViewModel)
 
-MVVM (Model-View-ViewModel)
+**Local Data Storage**
 
-Local Data Storage
+* Room Database
 
-Room Database
+**State Persistence**
 
-State Persistence
+* DataStore
 
-DataStore
+**Behavior Analysis**
 
-Behavior Analysis
+* On-device behavioral analytics engine
 
-On-device behavioral analytics engine
+**Adaptive UI System**
 
-Adaptive UI System
+* Android System Overlay APIs
+* Notification behavior handling
 
-Android System Overlay APIs
+**Design**
 
-Notification behavior handling
+* UI/UX Design
+* Motion & Adaptive Interface Design
 
-Design
 
-UI/UX Design
-
-Motion & Adaptive Interface Design
-
-Project Structure
-AffectaAI
-│
-├── ui
-│   ├── home
-│   ├── insights
-│   ├── behaviors
-│   └── sensitivity
-│
-├── engine
-│   ├── emotion detection
-│   ├── behavioral logic
-│   └── UI strategy
-│
-├── collector
-│   └── behavioral feature collection
-│
-├── ml
-│   └── emotion prediction
-│
-├── system
-│   └── overlay service
-│
-└── storage
-    └── emotion snapshot database
-Insights & Analytics
+# Insights & Analytics
 
 The app stores emotion snapshots locally and generates weekly insights such as:
 
-Calm vs Stress trends
-
-Focus patterns
-
-Behavioral consistency
+* Calm vs Stress trends
+* Focus patterns
+* Behavioral consistency
 
 These insights are visualized through stacked emotional graphs.
 
-Privacy Approach
 
-AffectaAI follows a privacy-first design philosophy.
+# Privacy Approach
 
-No external tracking
+AffectaAI follows a **privacy-first design philosophy**.
 
-No third-party analytics
-
-No behavioral data upload
-
-All analysis runs locally on the device
+* No external tracking
+* No third-party analytics
+* No behavioral data upload
+* All analysis runs locally on the device
 
 Users maintain full control over their data.
 
-Future Improvements
+
+# Future Improvements
 
 Possible extensions for future versions include:
 
-On-device machine learning improvements
+* On-device machine learning improvements
+* Personalized emotion models
+* Context-aware notification filtering
+* Deeper behavioral analytics
+* Wearable integration
+* Adaptive productivity recommendations
 
-Personalized emotion models
 
-Context-aware notification filtering
-
-Deeper behavioral analytics
-
-Wearable integration
-
-Adaptive productivity recommendations
-
-Learning Outcomes
+# Learning Outcomes
 
 This project demonstrates practical experience in:
 
-Android app development using Kotlin
+* Android app development using Kotlin
+* Jetpack Compose UI design
+* MVVM architecture
+* Behavioral data analysis
+* Adaptive interface design
+* Privacy-focused application design
 
-Jetpack Compose UI design
 
-MVVM architecture
+# Author
 
-Behavioral data analysis
-
-Adaptive interface design
-
-Privacy-focused application design
-
-Author
-
-Praveen Ray
+**Praveen Ray**
 Android Developer | UI/UX Enthusiast | Adaptive Interface Systems
 
-GitHub: (add your GitHub link)
+
